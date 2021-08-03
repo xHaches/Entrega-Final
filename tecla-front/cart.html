@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Tecla Tienda Online</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/dist/css/carousel.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Tienda Online</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="cart.html">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="register.html">Registro</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle show" href="#" id="navbarDropdown2" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="true">
+                                Categorías
+                            </a>
+                            <ul class="dropdown-menu show" aria-labelledby="navbarDropdown2" data-bs-popper="none"
+                                id="categories">
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" id="searchForm">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="term">
+                        <a href="search.html">
+                            <button class="btn btn-outline-success" type="button" id="search">Search</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+
+        <div class="col">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted">Tu carito</span>
+                <span class="badge bg-secondary rounded-pill" id="cartCount"></span>
+            </h4>
+            <ul class="list-group mb-3" id="cartContent">
+            </ul>
+            <div id="buyButton">
+            </div>
+        </div>
+
+    </div>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/dist/js/form-validation.js"></script>
+
+    <!-- APP -->
+    <script type="module" src="./app/controllers/navbar.js"></script>
+    <script type="module" src="./app/controllers/cart.js"></script>
+</body>
+
+</html>
