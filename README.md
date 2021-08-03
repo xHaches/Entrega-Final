@@ -18,7 +18,12 @@ npm install
 nodemon
 ```
 
-**Paso 4:** Dentro de la carpeta *Frontend* abrir los archivos `.html` y estando dentro dar click derecho para seleccionar
+**Paso 5:** Dentro de la carpeta *Frontend* abrir los archivos `.html` y estando dentro dar click derecho para seleccionar
+```
+Open with Live Server
+```
+
+**Paso 6:** Tener cuenta en `https://cloudinary.com/` y gregar *Cloud name*, *API Key* y *API Secret* a las variables de entorno
 ```
 Open with Live Server
 ```
